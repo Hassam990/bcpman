@@ -14,3 +14,9 @@ Desktop.ini
 # Raw source images (site uses optimised copies in assets/images/)
 WhatsApp Image *.jpeg
 WhatsApp Image *.zip
+HERO IMAGE USE THIS.jpeg
+
+# Node / build
+node_modules/
+dist/
+*.local
