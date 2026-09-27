@@ -66,7 +66,7 @@ export default function Services() {
             <TextType
               as="em"
               className="head-type"
-              text={['done properly.', 'handled personally.', 'kept simple.']}
+              text={['done properly.', 'handled with care.', 'kept simple.']}
               typingSpeed={45}
               deletingSpeed={22}
               pauseDuration={1600}
