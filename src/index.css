@@ -57,9 +57,9 @@ button{font-family:inherit;cursor:pointer}
 
 /* ---------- Header ---------- */
 .site-header{position:sticky;top:0;z-index:50;background:rgba(248,245,238,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
-.header-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:86px}
+.header-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:100px}
 .brand{display:flex;align-items:center;gap:12px}
-.brand-logo{height:60px;width:auto}
+.brand-logo{height:80px;width:auto}
 .nav-list{display:flex;gap:32px}
 .nav-list a{font-weight:500;font-size:15px;color:var(--ink);position:relative;padding:6px 0}
 .nav-list a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--navy-900);transition:width .25s ease}
@@ -332,7 +332,7 @@ button{font-family:inherit;cursor:pointer}
 }
 @media (max-width:480px){
   html{scroll-padding-top:72px}
-  .site-header .brand-logo{height:44px}
+  .site-header .brand-logo{height:58px}
   .theme-dot{width:20px;height:20px}
   .hero-grid{padding:36px 0 0;gap:32px}
   .hero-badge{font-size:10.5px;padding:7px 12px;margin-bottom:18px}
