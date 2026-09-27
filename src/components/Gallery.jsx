@@ -7,7 +7,7 @@ const PHOTOS = [
     src: 'assets/images/van-4.jpg',
     alt: 'BCP van loading',
     cap: 'ready for anything',
-    tag: 'leading, tying & wrapping',
+    tag: 'loading, blanket wrapping & tying',
   },
   {
     src: 'assets/images/van-1.jpg',

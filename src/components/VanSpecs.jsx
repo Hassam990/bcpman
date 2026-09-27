@@ -16,9 +16,9 @@ export default function VanSpecs() {
           <TiltedCard
             imageSrc="assets/images/van-specs.jpg"
             altText="BCP Man And Small Van dimensions"
-            containerHeight="100%"
+            containerHeight="440px"
             containerWidth="100%"
-            imageHeight="380px"
+            imageHeight="440px"
             imageWidth="100%"
             rotateAmplitude={8}
             scaleOnHover={1.06}

@@ -59,7 +59,7 @@ button{font-family:inherit;cursor:pointer}
 .site-header{position:sticky;top:0;z-index:50;background:rgba(248,245,238,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:86px}
 .brand{display:flex;align-items:center;gap:12px}
-.brand-logo{height:48px;width:auto}
+.brand-logo{height:60px;width:auto}
 .nav-list{display:flex;gap:32px}
 .nav-list a{font-weight:500;font-size:15px;color:var(--ink);position:relative;padding:6px 0}
 .nav-list a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--navy-900);transition:width .25s ease}
@@ -221,7 +221,10 @@ button{font-family:inherit;cursor:pointer}
 
 /* ---------- Van specs ---------- */
 .van-grid{display:grid;grid-template-columns:1fr 1fr;gap:60px;align-items:center}
-.van-media{position:relative}
+.van-media{position:relative;height:440px}
+.van-media .tilted-card-figure{width:100% !important;height:100% !important}
+.van-media .tilted-card-inner{width:100% !important;height:100% !important}
+.van-media .tilted-card-img{width:100% !important;height:100% !important;object-fit:cover !important;position:absolute;top:0;left:0;border-radius:16px}
 .van-frame{border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
 .van-media::after{content:"";position:absolute;inset:auto -18px -18px auto;width:96px;height:96px;border-radius:16px;border:2px solid var(--accent);z-index:-1}
 .spec-list{margin:26px 0 30px}
@@ -257,7 +260,7 @@ button{font-family:inherit;cursor:pointer}
 /* ---------- Footer ---------- */
 .site-footer{background:var(--navy-950);color:#a7afc7;padding:72px 0 0}
 .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px;padding-bottom:44px;border-bottom:1px solid var(--line-dark)}
-.foot-logo{height:46px;width:auto;filter:brightness(9);opacity:.92;margin-bottom:18px}
+.foot-logo{height:60px;width:auto;filter:brightness(9);opacity:.92;margin-bottom:18px}
 .foot-brand p{font-size:15px;max-width:340px;color:#8f98b6}
 .foot-nav h3,.foot-contact h3{color:#fff;font-family:var(--font-display);font-weight:500;font-size:16.5px;margin-bottom:18px}
 .foot-nav li{margin-bottom:12px}
@@ -295,6 +298,7 @@ button{font-family:inherit;cursor:pointer}
   .quote-grid{grid-template-columns:1fr;gap:44px}
   .about-grid{grid-template-columns:1fr;gap:40px}
   .van-grid{grid-template-columns:1fr;gap:40px}
+  .van-media{height:320px}
   .steps{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr;gap:34px}
   .service-grid{grid-template-columns:repeat(2,1fr);gap:16px}
@@ -328,7 +332,7 @@ button{font-family:inherit;cursor:pointer}
 }
 @media (max-width:480px){
   html{scroll-padding-top:72px}
-  .site-header .brand-logo{height:34px}
+  .site-header .brand-logo{height:44px}
   .theme-dot{width:20px;height:20px}
   .hero-grid{padding:36px 0 0;gap:32px}
   .hero-badge{font-size:10.5px;padding:7px 12px;margin-bottom:18px}
@@ -349,7 +353,7 @@ button{font-family:inherit;cursor:pointer}
   .step{padding:28px 24px}
   .cta-band{padding:56px 0}
   .footer-grid{gap:28px}
-  .foot-logo{height:38px}
+  .foot-logo{height:52px}
   .form-row{grid-template-columns:1fr;gap:14px}
   .quote-form{padding:22px}
   .field input,.field select,.field textarea{font-size:16px}
