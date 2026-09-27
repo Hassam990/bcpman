@@ -24,7 +24,7 @@ export default function Hero() {
             <i aria-hidden="true"></i> Man &amp; van · BCP &amp; surrounding areas
           </span>
           <h1 className="reveal">
-            One van, one driver,{' '}
+            <span className="hero-line">One van, one driver,</span>
             <TextType
               as="span"
               className="hero-type"
