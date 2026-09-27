@@ -59,7 +59,7 @@ export default function Hero() {
           <div className="hero-ring" aria-hidden="true"></div>
           <div className="hero-frame">
             <TiltedCard
-              imageSrc="assets/images/van-2.jpg"
+              imageSrc="assets/images/hero.jpg"
               altText="BCP Man And Small Van Vauxhall van, loaded and ready"
               containerHeight="100%"
               containerWidth="100%"
