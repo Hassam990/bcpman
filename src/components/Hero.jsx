@@ -28,7 +28,7 @@ export default function Hero() {
             <TextType
               as="span"
               className="hero-type"
-              text={['every small move.', 'furniture & flat moves.', 'collections & deliveries.', 'clearances done right.']}
+              text={['every small move.', 'furniture & flat moves.', 'clearances done right.']}
               typingSpeed={55}
               deletingSpeed={26}
               pauseDuration={1800}
@@ -71,7 +71,6 @@ export default function Hero() {
               showTooltip={false}
             />
           </div>
-          <span className="hero-note">still the one<br />who turns up</span>
           <span className="hero-pill">
             <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M13 2L3 14h9l-1 8 10-12h-9l1-8z"/></svg>
             Short-notice availability
