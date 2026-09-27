@@ -28,7 +28,7 @@ export default function Hero() {
             <TextType
               as="span"
               className="hero-type"
-              text={['small moves.', 'man & van moves.', 'clearances.', 'deliveries.']}
+              text={['small moves.', 'house clearances.', 'partial clearances.', 'man & van moves.', 'deliveries.']}
               typingSpeed={55}
               deletingSpeed={26}
               pauseDuration={1800}
@@ -36,7 +36,7 @@ export default function Hero() {
               cursorCharacter=""
             />
           </h1>
-          <p className="hero-sub reveal reveal-delay-1">From a single item that won't fit in the car to a full van load for a flat, studio or office — collections, deliveries and clearances, handled personally from start to finish. We don't do full house removals, but almost everything smaller is exactly what we're set up for.</p>
+          <p className="hero-sub reveal reveal-delay-1">BCP Man and Small Van covers Bournemouth, Christchurch, Poole and the surrounding areas. From a single item that won't fit in the car to a full van load for a flat, studio or office — collections, deliveries, house clearances and partial clearances, handled personally from start to finish. We don't do full house removals, but almost everything smaller is exactly what we're set up for.</p>
           <div className="hero-cta reveal reveal-delay-2">
             <a className="btn btn-accent" href="#quote">Get A Free Quote</a>
             <a className="btn btn-ghost" href="https://wa.me/447922227398" target="_blank" rel="noopener">WhatsApp Us</a>

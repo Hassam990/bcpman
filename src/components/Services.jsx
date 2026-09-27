@@ -4,6 +4,12 @@ import useReveal from '../useReveal';
 
 const SERVICES = [
   {
+    tag: 'whole house or just part of it',
+    title: 'House Clearance & Partial Clearances',
+    desc: 'Full house clearances or just a few rooms — lofts, garages, kitchens and more. Everything removed, loaded and disposed of responsibly. No job too big or too small.',
+    icon: <><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></>,
+  },
+  {
     tag: 'studios, rooms & flats',
     title: 'Room & Small Flat Moves',
     desc: 'Studios, single rooms and small flats moved with the same care as a much bigger job.',
@@ -14,12 +20,6 @@ const SERVICES = [
     title: 'Small Office & Business Moves',
     desc: 'Desks, files and equipment relocated with minimal disruption to the working day.',
     icon: <><rect x="3" y="4" width="18" height="16" rx="2" /><path d="M3 10h18M9 4v16" /></>,
-  },
-  {
-    tag: 'lofts, garages & sheds',
-    title: 'House & Garage Clearance',
-    desc: 'Lofts, garages, sheds and full clearances, taken away and disposed of responsibly.',
-    icon: <><rect x="3" y="7" width="18" height="14" rx="2" /><path d="M8 7V5a2 2 0 0 1 2-2h4a2 2 0 0 1 2 2v2M3 12h18M12 12v9" /></>,
   },
   {
     tag: 'sofas, beds & white goods',
@@ -66,7 +66,7 @@ export default function Services() {
             <TextType
               as="em"
               className="head-type"
-              text={['done properly.', 'handled with care.', 'kept simple.']}
+              text={['done properly.', 'handled with care.', 'kept simple.', 'cleared with care.']}
               typingSpeed={45}
               deletingSpeed={22}
               pauseDuration={1600}
@@ -74,7 +74,7 @@ export default function Services() {
               cursorCharacter=""
             />
           </h2>
-          <p className="section-sub">We're set up for the jobs a full removals firm is too big for — single items, rooms, studios and small flats — with a proper uniformed, protective-blanket-and-straps standard on every one.</p>
+          <p className="section-sub">From house clearances and partial clearances across Bournemouth, Christchurch and Poole — to single items, rooms and small flats. BCP Man and Small Van handles the jobs a full removals firm is too big for, with a uniformed, protective-blanket-and-straps standard on every one.</p>
         </div>
 
         <div className="service-grid">
