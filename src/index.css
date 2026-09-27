@@ -145,17 +145,27 @@ button{font-family:inherit;cursor:pointer}
 .section-head.center{margin-left:auto;margin-right:auto;text-align:center}
 .section-head.center .section-sub{margin-left:auto;margin-right:auto}
 
+/* ---------- Section eyebrow ---------- */
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;font-weight:600;letter-spacing:.1em;text-transform:uppercase;color:var(--accent-dim);margin-bottom:14px}
+.eyebrow::before{content:"";width:26px;height:1.5px;background:var(--accent)}
+
 /* ---------- Services: modern cards ---------- */
-.service-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:20px}
-.service-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius-lg);padding:34px;height:100%}
-.service-topline{display:flex;align-items:center;justify-content:space-between;margin-bottom:22px}
-.service-icon{width:42px;height:42px;color:var(--accent-dim);flex-shrink:0}
-.service-icon svg{width:100%;height:100%}
-.service-num{font-family:var(--font-display);font-size:20px;color:var(--muted-light);font-weight:500}
-.service-card h3{font-family:var(--font-display);font-size:22px;font-weight:500;color:var(--navy-950);margin-bottom:8px}
-.service-card p{color:var(--muted);font-size:14.5px}
-.service-card .service-type{display:block;font-family:var(--font-note);font-size:20px;color:var(--accent-dim);margin-bottom:10px}
-.reactbits-spotlight{--spotlight-color:rgba(194,87,44,.22);background:var(--white);border:1px solid var(--line);border-radius:var(--radius-lg)}
+.service-grid{display:grid;grid-template-columns:repeat(4,1fr);gap:18px}
+.service-card{height:100%;transition:transform .3s cubic-bezier(.2,.8,.2,1),box-shadow .3s ease,border-color .3s ease}
+.reactbits-spotlight.service-card{background:var(--white);border:1px solid var(--line);border-radius:18px;padding:28px 24px}
+.reactbits-spotlight{--spotlight-color:color-mix(in srgb,var(--accent) 15%,transparent)}
+.service-card:hover{transform:translateY(-5px);box-shadow:0 20px 44px rgba(11,18,41,.12);border-color:color-mix(in srgb,var(--accent-dim) 45%,transparent)}
+.service-link{display:flex;flex-direction:column;height:100%;text-align:left;color:inherit}
+.service-topline{display:flex;align-items:center;justify-content:space-between;margin-bottom:16px}
+.service-icon{width:46px;height:46px;border-radius:12px;background:var(--accent-tint);color:var(--accent-dim);display:flex;align-items:center;justify-content:center;flex-shrink:0}
+.service-icon svg{width:22px;height:22px}
+.service-num{font-family:var(--font-display);font-size:14px;color:var(--muted-light);font-weight:500;letter-spacing:.05em}
+.service-card .service-type{font-family:var(--font-note);font-size:20px;color:var(--accent-dim);line-height:1;margin-bottom:9px}
+.service-card h3{font-family:var(--font-display);font-size:19px;font-weight:500;color:var(--navy-950);margin-bottom:8px;line-height:1.25}
+.service-card p{color:var(--muted);font-size:14px;line-height:1.55}
+.service-go{margin-top:auto;display:inline-flex;align-items:center;gap:7px;padding-top:16px;font-size:13px;font-weight:600;color:var(--accent-dim)}
+.service-go svg{transition:transform .25s ease}
+.service-card:hover .service-go svg{transform:translateX(5px)}
 
 /* ---------- Route / coverage ---------- */
 .route{background:var(--navy-950);color:#fff;position:relative;overflow:hidden}
@@ -284,7 +294,7 @@ button{font-family:inherit;cursor:pointer}
   .van-grid{grid-template-columns:1fr;gap:40px}
   .steps{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr;gap:34px}
-  .service-grid{grid-template-columns:1fr;gap:16px}
+  .service-grid{grid-template-columns:repeat(2,1fr);gap:16px}
   .insure-grid{grid-template-columns:1fr;gap:22px}
   .section{padding:88px 0}
   .gallery{grid-template-columns:repeat(2,1fr)}
@@ -329,7 +339,9 @@ button{font-family:inherit;cursor:pointer}
   .hero-ring{display:none}
   .section{padding:64px 0}
   .section-head h2{font-size:clamp(30px,10vw,38px)}
-  .service-card{padding:26px}
+  .reactbits-spotlight.service-card{padding:22px 18px}
+  .service-grid{grid-template-columns:1fr}
+  .service-card .service-type{font-size:18px}
   .spec-list li{font-size:15px}
   .spec-v{font-size:18px}
   .spec-v small{font-size:12px}

@@ -36,7 +36,7 @@ const SERVICES = [
   {
     tag: 'marketplace collections',
     title: 'eBay & Gumtree Collections',
-    desc: 'Marketplace collections and deliveries so you don\'t have to make two trips.',
+    desc: "Marketplace collections and deliveries so you don't have to make two trips.",
     icon: <path d="M21 8l-9-5-9 5 9 5 9-5zM3 8v8l9 5 9-5V8M12 13v8" />,
   },
   {
@@ -55,35 +55,47 @@ const SERVICES = [
 
 export default function Services() {
   const ref = useReveal();
+
   return (
     <section className="section" id="services">
       <div className="wrap" ref={ref}>
-        <div className="section-head reveal">
-          <h2>Every size of small move, <em>done properly</em></h2>
+        <div className="section-head center reveal">
+          <span className="eyebrow">What we handle</span>
+          <h2>
+            Every size of small move,{' '}
+            <TextType
+              as="em"
+              className="head-type"
+              text={['done properly.', 'handled personally.', 'kept simple.']}
+              typingSpeed={45}
+              deletingSpeed={22}
+              pauseDuration={1600}
+              initialDelay={400}
+              cursorCharacter=""
+            />
+          </h2>
           <p className="section-sub">We're set up for the jobs a full removals firm is too big for — single items, rooms, studios and small flats — with a proper uniformed, protective-blanket-and-straps standard on every one.</p>
         </div>
+
         <div className="service-grid">
           {SERVICES.map((s, i) => (
-            <div key={s.title} className={`reveal ${i % 2 ? 'reveal-delay-1' : ''}`}>
+            <div key={s.title} className={`reveal reveal-delay-${(i % 3) + 1}`}>
               <SpotlightCard className="service-card reactbits-spotlight">
-                <div className="service-topline">
-                  <div className="service-icon">
-                    <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">{s.icon}</svg>
+                <a className="service-link" href="#quote" aria-label={`${s.title} — get a free quote`}>
+                  <div className="service-topline">
+                    <span className="service-icon">
+                      <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.6" strokeLinecap="round" strokeLinejoin="round">{s.icon}</svg>
+                    </span>
+                    <span className="service-num">{String(i + 1).padStart(2, '0')}</span>
                   </div>
-                  <span className="service-num">{String(i + 1).padStart(2, '0')}</span>
-                </div>
-                <TextType
-                  as="span"
-                  className="service-type"
-                  text={s.tag}
-                  loop={false}
-                  showCursor={false}
-                  startOnVisible
-                  initialDelay={300}
-                  typingSpeed={38}
-                />
-                <h3>{s.title}</h3>
-                <p>{s.desc}</p>
+                  <span className="service-type">{s.tag}</span>
+                  <h3>{s.title}</h3>
+                  <p>{s.desc}</p>
+                  <span className="service-go">
+                    Get a free quote
+                    <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"><path d="M5 12h14M12 5l7 7-7 7"/></svg>
+                  </span>
+                </a>
               </SpotlightCard>
             </div>
           ))}
