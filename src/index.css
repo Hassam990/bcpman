@@ -100,7 +100,7 @@ button{font-family:inherit;cursor:pointer}
 .hero-badge{display:inline-flex;align-items:center;gap:10px;font-size:12.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;color:var(--accent-tint);background:rgba(255,255,255,.06);border:1px solid rgba(255,255,255,.15);border-radius:999px;padding:9px 16px;margin-bottom:24px}
 .hero-badge i{width:8px;height:8px;border-radius:50%;background:var(--accent);animation:pulse 2.2s ease-in-out infinite}
 @keyframes pulse{0%,100%{box-shadow:0 0 0 0 var(--accent-shadow)}55%{box-shadow:0 0 0 8px transparent}}
-.hero h1{font-family:var(--font-display);font-size:clamp(42px,5.4vw,70px);line-height:1.08;font-weight:500;letter-spacing:-.01em;margin-bottom:22px}
+.hero h1{font-family:var(--font-display);font-size:clamp(40px,5.2vw,64px);line-height:1.08;font-weight:500;letter-spacing:-.01em;margin-bottom:22px}
 .hero h1 .hero-line{display:block}
 .hero h1 .hero-type{display:block;color:var(--accent);font-style:italic;overflow-wrap:anywhere;min-height:1.08em}
 .hero-sub{font-size:18px;color:#c3cbe0;max-width:480px;margin-bottom:34px}

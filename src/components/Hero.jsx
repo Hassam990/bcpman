@@ -28,7 +28,7 @@ export default function Hero() {
             <TextType
               as="span"
               className="hero-type"
-              text={['every small move.', 'furniture & flat moves.', 'clearances done right.']}
+              text={['small moves.', 'man & van moves.', 'clearances.', 'deliveries.']}
               typingSpeed={55}
               deletingSpeed={26}
               pauseDuration={1800}
