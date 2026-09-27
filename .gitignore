@@ -10,3 +10,7 @@ Desktop.ini
 
 # Logs
 *.log
+
+# Raw source images (site uses optimised copies in assets/images/)
+WhatsApp Image *.jpeg
+WhatsApp Image *.zip
