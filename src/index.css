@@ -261,7 +261,7 @@ button{font-family:inherit;cursor:pointer}
 /* ---------- Footer ---------- */
 .site-footer{background:var(--navy-950);color:#a7afc7;padding:72px 0 0}
 .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px;padding-bottom:44px;border-bottom:1px solid var(--line-dark)}
-.foot-logo{height:60px;width:auto;filter:brightness(9);opacity:.92;margin-bottom:18px}
+.foot-logo{height:90px;width:auto;filter:brightness(9);opacity:.92;margin-bottom:18px}
 .foot-brand p{font-size:15px;max-width:340px;color:#8f98b6}
 .foot-nav h3,.foot-contact h3{color:#fff;font-family:var(--font-display);font-weight:500;font-size:16.5px;margin-bottom:18px}
 .foot-nav li{margin-bottom:12px}
@@ -354,7 +354,7 @@ button{font-family:inherit;cursor:pointer}
   .step{padding:28px 24px}
   .cta-band{padding:56px 0}
   .footer-grid{gap:28px}
-  .foot-logo{height:52px}
+  .foot-logo{height:72px}
   .form-row{grid-template-columns:1fr;gap:14px}
   .quote-form{padding:22px}
   .field input,.field select,.field textarea{font-size:16px}
