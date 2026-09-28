@@ -261,7 +261,7 @@ button{font-family:inherit;cursor:pointer}
 /* ---------- Footer ---------- */
 .site-footer{background:var(--navy-950);color:#a7afc7;padding:72px 0 0}
 .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px;padding-bottom:44px;border-bottom:1px solid var(--line-dark)}
-.foot-logo{height:90px;width:auto;filter:brightness(9);opacity:.92;margin-bottom:18px}
+.foot-logo{height:90px;width:auto;background:#fff;border-radius:8px;padding:6px 10px;margin-bottom:18px}
 .foot-brand p{font-size:15px;max-width:340px;color:#8f98b6}
 .foot-nav h3,.foot-contact h3{color:#fff;font-family:var(--font-display);font-weight:500;font-size:16.5px;margin-bottom:18px}
 .foot-nav li{margin-bottom:12px}
