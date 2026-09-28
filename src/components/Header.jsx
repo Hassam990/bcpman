@@ -20,6 +20,7 @@ export default function Header() {
       <div className="wrap header-inner">
         <a className="brand" href="#top" aria-label="BCP Man And Small Van home" onClick={close}>
           <img className="brand-logo" src="assets/images/logo.png" alt="BCP Man And Small Van logo" />
+          <span className="brand-recycle" aria-label="Licensed waste carrier — responsible recycling" title="Licensed Waste Carrier">♻️</span>
         </a>
         <nav className={`site-nav ${open ? 'open' : ''}`} aria-label="Main">
           <ul className="nav-list">

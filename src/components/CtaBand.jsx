@@ -8,7 +8,7 @@ export default function CtaBand() {
       <div className="wrap cta-inner" ref={ref}>
         <div className="reveal">
           <h2>Got something to move or clear?</h2>
-          <p>House clearance, partial clearance or a man and van job — call or WhatsApp for an honest quote. No call-out games, just a helpful answer.</p>
+          <p>House clearance, partial clearance or a man and van job — call or WhatsApp for an honest quote. A helper is available when the job needs it. No call-out games, just a helpful answer.</p>
         </div>
         <div className="cta-actions reveal reveal-delay-1">
           <a className="btn btn-accent" href="tel:+447922227398">Call 07922 227398</a>

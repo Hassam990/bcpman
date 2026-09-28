@@ -27,6 +27,7 @@ export default function Footer() {
           <h3>Get In Touch</h3>
           <p><a href="tel:+447922227398">07922 227398</a></p>
           <p><a href="https://wa.me/447922227398" target="_blank" rel="noopener">Message on WhatsApp</a></p>
+          <p><a href="mailto:info@bcpmanandsmallvan.co.uk">info@bcpmanandsmallvan.co.uk</a></p>
           <p>Bournemouth, Christchurch &amp; Poole<br />Dorset, UK</p>
         </div>
       </div>

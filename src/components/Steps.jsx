@@ -3,7 +3,7 @@ import useReveal from '../useReveal';
 const STEPS = [
   ['01', 'Message your postcodes', 'Send collection and delivery postcodes, what needs moving and your preferred date.'],
   ['02', 'We turn up on time', 'Uniformed, equipped with blankets and straps, ready to keep things safe.'],
-  ['03', 'Job done, properly', 'Everything moved, dropped or cleared — with minimal fuss and maximum care.'],
+  ['03', 'Job done, properly', 'Everything moved, delivered or cleared — with minimal fuss and maximum care.'],
 ];
 
 export default function Steps() {

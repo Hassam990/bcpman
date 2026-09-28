@@ -6,7 +6,7 @@ const SERVICES = [
   {
     tag: 'whole house or just part of it',
     title: 'House Clearance & Partial Clearances',
-    desc: 'Full house clearances or just a few rooms — lofts, garages, kitchens and more. Everything removed, loaded and disposed of responsibly. No job too big or too small.',
+    desc: 'Full house clearances or just a few rooms — lofts, garages, kitchens and more. Everything removed, loaded and disposed of responsibly. We take everything and leave all areas clean and tidy on job completion. No job too big or too small.',
     icon: <><path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></>,
   },
   {
@@ -24,7 +24,7 @@ const SERVICES = [
   {
     tag: 'sofas, beds & white goods',
     title: 'Furniture Disposal',
-    desc: 'Old sofas, beds and white goods collected and disposed of the right way.',
+    desc: 'Old sofas, beds and white goods collected and disposed of the right way. We take everything and leave all areas clean and tidy on job completion.',
     icon: <path d="M2 20h20M4 20V9a2 2 0 0 1 2-2h12a2 2 0 0 1 2 2v11M12 7v13M9 20l1-6h4l1 6" />,
   },
   {

@@ -25,7 +25,7 @@ const PHOTOS = [
     src: 'assets/images/van-2.jpg',
     alt: 'BCP van detail',
     cap: 'built for small moves',
-    tag: 'one van, one driver',
+    tag: '⭐⭐⭐⭐⭐ 5 star service',
   },
 ];
 

@@ -27,7 +27,7 @@ export default function Coverage() {
         <div className="route-foot reveal reveal-delay-2">
           <span><b>Coverage:</b> BCP and all surrounding areas</span>
           <span><b>Rates:</b> hourly or fixed-price quotes</span>
-          <span><b>Notice:</b> often available short notice</span>
+          <span><b>Notice:</b> often available at short notice 👍</span>
         </div>
       </div>
     </section>

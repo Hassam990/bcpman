@@ -59,7 +59,8 @@ button{font-family:inherit;cursor:pointer}
 .site-header{position:sticky;top:0;z-index:50;background:rgba(248,245,238,.88);backdrop-filter:blur(14px);border-bottom:1px solid var(--line)}
 .header-inner{display:flex;align-items:center;justify-content:space-between;gap:24px;min-height:100px}
 .brand{display:flex;align-items:center;gap:12px}
-.brand-logo{height:80px;width:auto}
+.brand-recycle{font-size:22px;line-height:1;margin-left:2px;filter:drop-shadow(0 1px 2px rgba(0,0,0,.15))}
+.brand-logo{height:100px;width:auto}
 .nav-list{display:flex;gap:32px}
 .nav-list a{font-weight:500;font-size:15px;color:var(--ink);position:relative;padding:6px 0}
 .nav-list a::after{content:"";position:absolute;left:0;bottom:0;width:0;height:1px;background:var(--navy-900);transition:width .25s ease}
@@ -199,6 +200,7 @@ button{font-family:inherit;cursor:pointer}
 .insure-item{display:flex;gap:16px;align-items:flex-start}
 .insure-icon{width:40px;height:40px;flex-shrink:0;color:var(--accent-dim)}
 .insure-icon svg{width:100%;height:100%}
+.insure-emoji{font-size:32px;line-height:1;display:block;text-align:center}
 .insure-item h4{font-family:var(--font-display);font-size:17px;font-weight:500;color:var(--navy-950);margin-bottom:3px}
 .insure-item p{font-size:13.5px;color:var(--muted)}
 
@@ -331,7 +333,7 @@ button{font-family:inherit;cursor:pointer}
 }
 @media (max-width:480px){
   html{scroll-padding-top:72px}
-  .site-header .brand-logo{height:58px}
+  .site-header .brand-logo{height:75px}
   .theme-dot{width:20px;height:20px}
   .hero-grid{padding:36px 0 0;gap:32px}
   .hero-badge{font-size:10.5px;padding:7px 12px;margin-bottom:18px}
