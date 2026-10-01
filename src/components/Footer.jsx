@@ -2,6 +2,7 @@ const LINKS = [
   ['Services', '#services'],
   ['Coverage', '#coverage'],
   ['About', '#about'],
+  ['Blog', '#blog'],
   ['Get A Quote', '#quote'],
   ['Gallery', '#gallery'],
 ];

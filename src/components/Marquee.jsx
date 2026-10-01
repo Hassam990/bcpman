@@ -6,14 +6,18 @@ const ITEMS = [
   'Furniture Disposal',
   'eBay & Gumtree Collections',
   'Storage Moves',
+  'Single Item Collections',
+  'Helper Available',
+  'Short Notice Bookings',
 ];
 
 export default function Marquee() {
-  const doubled = [...ITEMS, ...ITEMS];
+  // Quadruple so the loop is seamless with no visible jump
+  const repeated = [...ITEMS, ...ITEMS, ...ITEMS, ...ITEMS];
   return (
     <section className="marquee" aria-label="Services ticker">
       <div className="marquee-track">
-        {doubled.map((item, i) => (
+        {repeated.map((item, i) => (
           <span key={i} className="marquee-item">
             {item} <i aria-hidden="true">—</i>
           </span>

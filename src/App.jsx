@@ -10,6 +10,7 @@ import VanSpecs from './components/VanSpecs.jsx';
 import Gallery from './components/Gallery.jsx';
 import Steps from './components/Steps.jsx';
 import CtaBand from './components/CtaBand.jsx';
+import Blog from './components/Blog.jsx';
 import Footer from './components/Footer.jsx';
 
 export default function App() {
@@ -27,6 +28,7 @@ export default function App() {
         <VanSpecs />
         <Gallery />
         <Steps />
+        <Blog />
         <CtaBand />
       </main>
       <Footer />

@@ -126,7 +126,7 @@ button{font-family:inherit;cursor:pointer}
 
 /* ---------- Marquee ---------- */
 .marquee{background:var(--navy-950);color:var(--accent-tint);overflow:hidden;padding:15px 0;border-top:1px solid var(--line-dark);border-bottom:1px solid var(--line-dark)}
-.marquee-track{display:flex;gap:28px;white-space:nowrap;font-weight:500;font-size:14.5px;animation:marquee 20s linear infinite}
+.marquee-track{display:flex;gap:28px;white-space:nowrap;font-weight:500;font-size:14.5px;animation:marquee 32s linear infinite}
 .marquee-track i{font-style:normal;color:var(--accent)}
 @keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
 
@@ -251,6 +251,29 @@ button{font-family:inherit;cursor:pointer}
 .step h3{font-family:var(--font-display);color:var(--navy-950);font-size:20px;font-weight:500;margin-bottom:9px}
 .step p{color:var(--muted);font-size:14.5px}
 
+/* ---------- Blog ---------- */
+.blog-grid{display:grid;grid-template-columns:repeat(2,1fr);gap:28px}
+.blog-card{background:var(--white);border:1px solid var(--line);border-radius:var(--radius);padding:32px;display:flex;flex-direction:column;gap:14px;transition:box-shadow .2s ease,transform .2s ease}
+.blog-card:hover{box-shadow:var(--shadow);transform:translateY(-3px)}
+.blog-card-meta{display:flex;align-items:center;gap:12px}
+.blog-tag{background:var(--accent);color:#fff;font-size:11.5px;font-weight:600;letter-spacing:.06em;text-transform:uppercase;padding:3px 10px;border-radius:999px}
+.blog-date{font-size:13px;color:var(--muted)}
+.blog-card h3{font-family:var(--font-display);font-size:20px;font-weight:500;color:var(--navy-950);line-height:1.3}
+.blog-card p{font-size:14.5px;color:var(--muted);line-height:1.65;flex:1}
+.blog-read-btn{display:inline-flex;align-items:center;gap:7px;align-self:flex-start;margin-top:4px}
+/* Modal */
+.blog-modal-backdrop{position:fixed;inset:0;background:rgba(8,16,40,.7);backdrop-filter:blur(4px);z-index:200;display:flex;align-items:center;justify-content:center;padding:20px;overflow-y:auto}
+.blog-modal{background:var(--paper);border-radius:var(--radius);padding:44px 48px;max-width:680px;width:100%;position:relative;max-height:90vh;overflow-y:auto}
+.blog-modal-close{position:absolute;top:16px;right:16px;background:transparent;border:none;cursor:pointer;color:var(--muted);padding:6px;line-height:1;transition:color .15s}
+.blog-modal-close:hover{color:var(--accent)}
+.blog-modal-meta{display:flex;align-items:center;gap:12px;margin-bottom:14px}
+.blog-modal h2{font-family:var(--font-display);font-size:clamp(22px,4vw,30px);font-weight:500;color:var(--navy-950);margin-bottom:24px;line-height:1.25}
+.blog-modal-body p{font-size:15.5px;color:var(--muted);line-height:1.75;margin-bottom:18px}
+.blog-modal-body p:last-child{margin-bottom:0}
+.blog-modal-cta{display:flex;gap:14px;flex-wrap:wrap;margin-top:32px;padding-top:28px;border-top:1px solid var(--line)}
+.btn-ghost-dark{border:1.5px solid var(--navy-300);color:var(--navy-950)}
+.btn-ghost-dark:hover{background:var(--navy-950);color:#fff}
+
 /* ---------- CTA band ---------- */
 .cta-band{background:linear-gradient(135deg,var(--navy-950) 0%,var(--navy-800) 100%);color:#fff;padding:72px 0;position:relative;overflow:hidden}
 .cta-inner{position:relative;z-index:1;display:flex;align-items:center;justify-content:space-between;gap:30px;flex-wrap:wrap}
@@ -261,8 +284,9 @@ button{font-family:inherit;cursor:pointer}
 /* ---------- Footer ---------- */
 .site-footer{background:var(--navy-950);color:#a7afc7;padding:72px 0 0}
 .footer-grid{display:grid;grid-template-columns:1.4fr 1fr 1fr;gap:48px;padding-bottom:44px;border-bottom:1px solid var(--line-dark)}
-.foot-logo{height:140px;width:auto;background:#fff;border-radius:8px;padding:6px 10px;margin-bottom:18px}
-.foot-brand p{font-size:15px;max-width:340px;color:#8f98b6}
+.foot-logo{height:140px;width:auto;background:#fff;border-radius:8px;padding:6px 10px;margin-bottom:18px;display:block;margin-left:auto;margin-right:auto}
+.foot-brand{text-align:center}
+.foot-brand p{font-size:15px;max-width:340px;color:#8f98b6;margin-left:auto;margin-right:auto}
 .foot-nav h3,.foot-contact h3{color:#fff;font-family:var(--font-display);font-weight:500;font-size:16.5px;margin-bottom:18px}
 .foot-nav li{margin-bottom:12px}
 .foot-nav a{color:#8f98b6;transition:color .2s}
@@ -301,6 +325,7 @@ button{font-family:inherit;cursor:pointer}
   .van-grid{grid-template-columns:1fr;gap:40px}
   .van-media{height:320px}
   .steps{grid-template-columns:1fr}
+  .blog-grid{grid-template-columns:1fr}
   .footer-grid{grid-template-columns:1fr;gap:34px}
   .service-grid{grid-template-columns:repeat(2,1fr);gap:16px}
   .insure-grid{grid-template-columns:1fr;gap:22px}
@@ -352,6 +377,8 @@ button{font-family:inherit;cursor:pointer}
   .spec-v small{font-size:12px}
   .gallery{grid-template-columns:1fr}
   .step{padding:28px 24px}
+  .blog-modal{padding:28px 20px}
+  .blog-modal h2{font-size:22px}
   .cta-band{padding:56px 0}
   .footer-grid{gap:28px}
   .foot-logo{height:110px}
