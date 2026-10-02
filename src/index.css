@@ -128,7 +128,7 @@ button{font-family:inherit;cursor:pointer}
 .marquee{background:var(--navy-950);color:var(--accent-tint);overflow:hidden;padding:15px 0;border-top:1px solid var(--line-dark);border-bottom:1px solid var(--line-dark)}
 .marquee-track{display:flex;gap:28px;white-space:nowrap;font-weight:500;font-size:14.5px;animation:marquee 32s linear infinite}
 .marquee-track i{font-style:normal;color:var(--accent)}
-@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-50%)}}
+@keyframes marquee{from{transform:translateX(0)}to{transform:translateX(-25%)}}
 
 /* ---------- Reveal on scroll ---------- */
 .reveal{opacity:0;transform:translateY(28px);transition:opacity .7s ease,transform .7s cubic-bezier(.2,.8,.2,1)}
@@ -189,7 +189,6 @@ button{font-family:inherit;cursor:pointer}
 .about-grid{display:grid;grid-template-columns:.85fr 1.15fr;gap:64px;align-items:center}
 .about-media{position:relative}
 .about-frame{border-radius:16px;overflow:hidden;box-shadow:var(--shadow)}
-.about-media::after{content:"";position:absolute;inset:auto -18px -18px auto;width:96px;height:96px;border-radius:16px;border:2px solid var(--accent);z-index:-1}
 .about-tag{position:absolute;bottom:-16px;left:-16px;background:var(--paper);color:var(--navy-950);font-family:var(--font-note);font-size:20px;padding:8px 18px;border-radius:5px;transform:rotate(-3deg);box-shadow:var(--shadow-soft)}
 .about-copy p{color:var(--muted);font-size:16px;margin-bottom:16px;max-width:520px}
 .about-copy p:last-of-type{margin-bottom:26px}
